@@ -1,0 +1,48 @@
+.cursor-dot,
+.cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    /* Inverts colors for visibility and cool effect */
+}
+
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    /* White in difference mode = inverts background */
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.cursor-ring {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        border-color 0.2s,
+        transform 0.1s ease-out;
+    opacity: 0.8;
+}
+
+/* Hover State */
+.cursor-dot.hover {
+    width: 0;
+    /* Hide dot on hover */
+    height: 0;
+    opacity: 0;
+}
+
+.cursor-ring.hover {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    /* Solid white circle that inverts text */
+    border-color: transparent;
+    opacity: 1;
+}

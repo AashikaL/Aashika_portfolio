@@ -1,0 +1,43 @@
+.skills-section {
+    padding: 6rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+}
+
+.skill-category h3 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--card-border);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-chip {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: none;
+    /* Keep custom cursor */
+}
+
+.skill-chip:hover {
+    background: var(--accent-gradient);
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(176, 38, 255, 0.3);
+    color: #fff;
+}
