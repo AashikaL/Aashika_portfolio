@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://AashikaL.github.io/Aashika_portfolio/sitemap.xml
