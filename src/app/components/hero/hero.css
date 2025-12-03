@@ -79,7 +79,7 @@
     height: 100%;
     border-radius: 50%;
     background-color: #1a1a1a;
-    background-image: url('/profile.jpg');
+    background-image: url('profile.jpg');
     background-size: cover;
     background-position: center top;
     border: 4px solid rgba(255, 255, 255, 0.1);
