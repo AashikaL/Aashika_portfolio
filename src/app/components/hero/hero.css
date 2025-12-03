@@ -44,6 +44,7 @@
 .cta-buttons {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn.secondary {
@@ -55,6 +56,12 @@
 .btn.secondary:hover {
     background: rgba(176, 38, 255, 0.1);
     box-shadow: 0 5px 15px rgba(176, 38, 255, 0.2);
+}
+
+.github-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .hero-image {
@@ -119,5 +126,19 @@
     .profile-circle {
         width: 250px;
         height: 250px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
     }
 }
