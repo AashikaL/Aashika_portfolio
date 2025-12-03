@@ -24,7 +24,7 @@ import { ScrollRevealDirective } from './directives/scroll-reveal';
     Experience,
     Projects,
     Skills,
-    Education,
+    // Education,
     Contact
   ],
   templateUrl: './app.html',
